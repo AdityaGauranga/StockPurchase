@@ -6,6 +6,14 @@ var outputBox = document.querySelector("#output-box");
 
 submitBtn.addEventListener("click", submitHandler);
 
+function submitHandler() {
+    var ip = Number(initialPrice.value);
+    var qty = Number(stocksQuantity.value);
+    var curr = Number(currentPrice.value);
+
+    calculateProfitAndLoss(ip, qty, curr);
+}
+
 function decimal (x) {
     return Number.parseFloat(x).toFixed(2);
 }
@@ -28,6 +36,4 @@ function calculateProfitAndLoss(initial, quantity, current) {
 
     outputBox.textContent = (`No Pain No Gain and No Gain No Pain`);
     outputBox.style.color = "yellow"
-}
-
 }
