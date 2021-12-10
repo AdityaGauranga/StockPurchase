@@ -6,6 +6,34 @@ var outputBox = document.querySelector("#output-box");
 
 submitBtn.addEventListener("click", submitHandler);
 
+initialPrice.onkeydown = function(e) {
+    if(!((e.keyCode > 95 && e.keyCode < 106)
+      || (e.keyCode > 47 && e.keyCode < 58) 
+      || (e.keyCode == 8)
+      || (e.keyCode == 110)
+      || e.keyCode == 190)) {
+        return false;
+    }
+}
+
+stocksQuantity.onkeydown = function(e) {
+    if(!((e.keyCode > 95 && e.keyCode < 106)
+      || (e.keyCode > 47 && e.keyCode < 58) 
+      || e.keyCode == 8)) {
+        return false;
+    }
+}
+
+currentPrice.onkeydown = function(e) {
+    if(!((e.keyCode > 95 && e.keyCode < 106)
+      || (e.keyCode > 47 && e.keyCode < 58) 
+      || (e.keyCode == 8)
+      || (e.keyCode == 110)
+      || e.keyCode == 190)) {
+        return false;
+    }
+}
+
 function submitHandler() {
     var ip = Number(initialPrice.value);
     var qty = Number(stocksQuantity.value);
