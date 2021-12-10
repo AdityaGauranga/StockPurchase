@@ -18,3 +18,16 @@ function calculateProfitAndLoss(initial, quantity, current) {
         outputBox.textContent = ("The invested amount is ${(initial * quantity)} and loss is ${loss} and the percent is ${lossPercentage}%")
         outputBox.style.color = "purple"
     }
+} else if (current > initial) {
+    var profit = decimal((current * quantity) - (initial * quantity));
+    var profitPercentage = decimal((profit / (initial * quantity)) * 100);
+
+    outputBox.textContent = ("The invested amount is ${(initial * quantity)} profit is ${profit} and the percent is ${profitPercentage}%")
+    outputBox.style.color = "green"
+} else {
+
+    outputBox.textContent = (`No Pain No Gain and No Gain No Pain`);
+    outputBox.style.color = "yellow"
+}
+
+}
