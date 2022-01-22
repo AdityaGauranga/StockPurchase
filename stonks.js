@@ -52,7 +52,7 @@ function calculateProfitAndLoss(initial, quantity, current) {
         var lossPercentage = decimal((loss / (current * quantity)) * 100);
 
         outputBox.textContent = (`The invested amount is ${(initial * quantity)} and loss is ${loss} and the percent is ${lossPercentage}%`)
-        outputBox.style.color = "purple"
+        outputBox.style.color = "red"
     }
  else if (current > initial) {
     var profit = decimal((current * quantity) - (initial * quantity));

@@ -7,8 +7,8 @@
 body {
     text-align: center;
     height: 120vh;
-    background: linear-gradient(to bottom right, 
-    #64f013, rgb(108, 0, 158));
+    background: linear-gradient(to bottom, 
+    #95f55e, #4b9221);
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
 input {
     margin: 20px;
     padding: 10px 40px;
-    background-color: #619102;
+    background-color: #d3f394;
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -37,7 +37,6 @@ button {
     background-color: #b2ee3a;
     border: 1px solid black;
     border-radius: 10px;
-    color: #5B21B6;
     cursor: pointer;
 }
 
